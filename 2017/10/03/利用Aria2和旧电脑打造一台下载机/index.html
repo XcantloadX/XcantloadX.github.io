@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Aria2,下载,回收利用," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="利用Aria2和旧电脑打造一台下载机现在电脑、手机更新换代这么快，相信谁家里都有几个旧设备吧，我就一直百度，怎样才能让它继续工作，但是都没有比较好的教程，都是完全变成一个下载机，但是我有时候还要用一下最后发现了一个下载神器——Aria2 当然了，新电脑也可以用，只要你舍得一直运行Aria2是全平台的，Windows、MAC、Linux、安卓等等，本教程只提供Win的教程，其他系统你们自己捣鼓去~(">
+<meta name="keywords" content="Aria2,下载,回收利用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用Aria2和旧电脑打造一台下载机">
+<meta property="og:url" content="http://xcantloadx.github.io/2017/10/03/利用Aria2和旧电脑打造一台下载机/index.html">
+<meta property="og:site_name" content="MinePrograming">
+<meta property="og:description" content="利用Aria2和旧电脑打造一台下载机现在电脑、手机更新换代这么快，相信谁家里都有几个旧设备吧，我就一直百度，怎样才能让它继续工作，但是都没有比较好的教程，都是完全变成一个下载机，但是我有时候还要用一下最后发现了一个下载神器——Aria2 当然了，新电脑也可以用，只要你舍得一直运行Aria2是全平台的，Windows、MAC、Linux、安卓等等，本教程只提供Win的教程，其他系统你们自己捣鼓去~(">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/mF7hH99egB.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/f2AFkBFI84.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/Lc578L90le.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/7dJA9d1C70.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/jh6Cf8ccm9.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/bCm93bKhjI.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/e0DJgE4mB2.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/hC8KbJ6k7e.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/b8D1hfAC80.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/m97GalHedI.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/bgEjiHJGCF.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/C5F4I68k9f.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/hIJckI9I7l.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/09IDh838eL.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/2Abcmd2K0m.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/E2871Dd6kh.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/FGk99I04hj.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/ABfBi1mHEa.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/d24aIC4Eka.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/AGgea1l0Dc.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/FIf47BGab9.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/aG9HA8F5a0.png?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/g9GmbjIHE4.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/CJeea2jbD0.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/cJ03mI32DJ.jpeg?imageslim">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/dE8L080mAh.jpeg?imageslim">
+<meta property="og:updated_time" content="2017-10-13T11:20:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="利用Aria2和旧电脑打造一台下载机">
+<meta name="twitter:description" content="利用Aria2和旧电脑打造一台下载机现在电脑、手机更新换代这么快，相信谁家里都有几个旧设备吧，我就一直百度，怎样才能让它继续工作，但是都没有比较好的教程，都是完全变成一个下载机，但是我有时候还要用一下最后发现了一个下载神器——Aria2 当然了，新电脑也可以用，只要你舍得一直运行Aria2是全平台的，Windows、MAC、Linux、安卓等等，本教程只提供Win的教程，其他系统你们自己捣鼓去~(">
+<meta name="twitter:image" content="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg?imageslim">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xcantloadx.github.io/2017/10/03/利用Aria2和旧电脑打造一台下载机/"/>
+
+
+
+
+
+  <title>利用Aria2和旧电脑打造一台下载机 | MinePrograming</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?898278e4340c78f7bc42e9bd1dfc10d5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">MinePrograming</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-好软推荐">
+          <a href="/categories/好软推荐" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            好软推荐
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/index.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xcantloadx.github.io/2017/10/03/利用Aria2和旧电脑打造一台下载机/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XcantloadX">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MinePrograming">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">利用Aria2和旧电脑打造一台下载机</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-03T10:24:11+08:00">
+                2017-10-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/折腾/" itemprop="url" rel="index">
+                    <span itemprop="name">折腾</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/10/03/利用Aria2和旧电脑打造一台下载机/" class="leancloud_visitors" data-flag-title="利用Aria2和旧电脑打造一台下载机">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="利用Aria2和旧电脑打造一台下载机"><a href="#利用Aria2和旧电脑打造一台下载机" class="headerlink" title="利用Aria2和旧电脑打造一台下载机"></a>利用Aria2和旧电脑打造一台下载机</h1><p>现在电脑、手机更新换代这么快，相信谁家里都有几个旧设备吧，我就一直百度，怎样才能让它继续工作，但是都没有比较好的教程，都是完全变成一个下载机，但是我有时候还要用一下<br>最后发现了一个下载神器——Aria2<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg?imageslim" alt="下载中，1MB/s"></p>
+<p>当然了，新电脑也可以用，只要你舍得一直运行<br>Aria2是全平台的，Windows、MAC、Linux、安卓等等，本教程只提供Win的教程，<del>其他系统你们自己捣鼓去</del>~(Linux教程正在编写)<br><a id="more"></a></p>
+<hr>
+<h2 id="电脑部分"><a href="#电脑部分" class="headerlink" title="电脑部分"></a>电脑部分</h2><h3 id="下载并运行Aria2"><a href="#下载并运行Aria2" class="headerlink" title="下载并运行Aria2"></a><strong>下载并运行Aria2</strong></h3><p>（为什么不写<code>安装并配置Aria2</code>？因为懒人包不需要安装和配置，直接下载运行就行了）</p>
+<p>找台 <strong>Win7 以上</strong>的电脑，下载这个：<a href="http://quamiller.com/17649679/aria2" target="_blank" rel="external">Aria2懒人包</a></p>
+<p>解压，可以看见这些文件<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/mF7hH99egB.png?imageslim" alt="文件"></p>
+<p>双击<code>运行.bat</code>，Aria2 就开始运行了<br>同理双击<code>停止.bat</code>就可以关掉 Aria2，当然，直接叉掉也可以，没什么影响，因为<code>停止.bat</code>的原理就是结束<code>aria2.exe</code><br>（那这个 bat 文件还有什么用啊喂？！）<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/f2AFkBFI84.png?imageslim" alt="运行界面"></p>
+<p>打开 <a href="http://aria2c.com/" target="_blank" rel="external">Aria2 控制台</a> 来查看效果，如果<strong>没有提示</strong><code>Aria2 PRC 服务器错误</code>就表示一切正常，如果有的话，好好检查一下你的步骤有没有出错！<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/Lc578L90le.png?imageslim" alt="GUI界面"></p>
+<h3 id="FTP-服务器"><a href="#FTP-服务器" class="headerlink" title="FTP 服务器"></a><strong>FTP 服务器</strong></h3><p>假如文件下载完之后要传到手机上，总不可能再插根数据线来传吧？<br>我们可以用<code>FTPServer</code>这个软件来新建一个 FTP 服务器</p>
+<p>软件使用方法非常简单：<br>打开 FTPServer，设置好<code>共享目录</code>，点<code>启动</code>，Win 端就配置好了，手机端在后面会讲<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/7dJA9d1C70.png?imageslim" alt="FTP服务器"></p>
+<hr>
+<h2 id="手机部分"><a href="#手机部分" class="headerlink" title="手机部分"></a>手机部分</h2><h4 id="安装并配置Yandex-Browser"><a href="#安装并配置Yandex-Browser" class="headerlink" title="安装并配置Yandex Browser"></a><strong>安装并配置Yandex Browser</strong></h4><p>谁不想躺在床上，用手机控制电脑下大片，然后舒舒服服躺在床上慢慢看？或者一键传到电视上？那就开始吧</p>
+<p>到应用市场下载<code>Yandex Browser</code>，这个浏览器可是很神奇的<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/jh6Cf8ccm9.jpeg?imageslim" alt="酷安"></p>
+<p>用Yandex Browser打开 <a href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="external">Tampermonkey_Chrome网上应用店</a> ，<strong>别忘了挂上你的梯子</strong><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/bCm93bKhjI.jpeg?imageslim" alt="网上应用店"></p>
+<p>安装~<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/e0DJgE4mB2.jpeg?imageslim" alt="安装"></p>
+<p>安装之后，它会弹出来一个网页，不管它，我们按<code>菜单键</code>，点<code>扩展插件</code>，再选<code>Tampermonkey</code>，俗称<code>油猴</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/hC8KbJ6k7e.jpeg?imageslim" alt="油猴界面"></p>
+<p>访问 <a href="https://greasyfork.org/zh-CN" target="_blank" rel="external">Greasy Fork</a> ，直接点主页上的<code>baidu.com</code>，你会看到一大堆脚本<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/b8D1hfAC80.jpeg?imageslim" alt="Greasy Fork主页"></p>
+<p>找到<code>EX-百度云盘</code>，点开，安装<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/m97GalHedI.jpeg?imageslim" alt="EX-百度云盘"><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/bgEjiHJGCF.jpeg?imageslim" alt="安装确认"></p>
+<h4 id="获取链接"><a href="#获取链接" class="headerlink" title="获取链接"></a><strong>获取链接</strong></h4><p>打开你的百度云客户端，找到你要下载的文件，分享，然后复制链接<br>（推荐选<strong>1天后失效</strong>，可以避免忘记取消分享的情况，如果是重要的文件，最好<strong>设密码</strong>）<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/C5F4I68k9f.jpeg?imageslim" alt="分享"></p>
+<p>在 <strong>Yandex Browser</strong> 里打开刚刚复制的链接，选中你要下载的文件（如果有多个文件的话），你会发现在原来的下载按钮旁会多出来一个<code>EX-下载</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/hIJckI9I7l.jpeg?imageslim" alt="EX-下载"></p>
+<p><strong>确认你没有登陆之后</strong>，点一下<code>EX-下载</code>，再选择<code>复制链接</code>，<code>复制</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/09IDh838eL.jpeg?imageslim" alt="复制链接"></p>
+<p><br></p>
+<h4 id="添加任务"><a href="#添加任务" class="headerlink" title="添加任务"></a><strong>添加任务</strong></h4><p>用浏览器打开 <a href="http://aria2c.com/" target="_blank" rel="external">Aria2 控制台</a> ，先不着急下载，点右上角的<code>设置</code>（想扳手一样的），第一项里面默认是<code>http://localhost:6800/jsonrpc</code><br>我们把它改为<code>http://你的内网IP:6800/jsonrpc</code>（<a href="http://jingyan.baidu.com/article/066074d6943977c3c21cb0e5.html" target="_blank" rel="external">如何查看IP？</a>），假如我的内网IP是<code>192.168.0.101</code>就改为<code>http://192.168.0.101:6800/jsonrpc</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/2Abcmd2K0m.jpeg?imageslim" alt="设置界面"></p>
+<p>然后点击右上角的<code>添加</code>，把你刚刚复制的链接粘贴进去，文件名、保存位置什么的不用管，<strong>唯一</strong>要看一下的是<code>分块数量</code>和<code>最大连接数</code><br><strong>理论上</strong>这两个越大，下载速度越快<br>推荐分别设置为<code>50</code>和<code>16</code>，<code>最大连接数</code>最多为16，<code>分块数量</code>无限制<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/E2871Dd6kh.jpeg?imageslim" alt="添加任务"></p>
+<p>然后愉快地看着它高速的下载吧，别忘了回来评论和感谢我~<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg?imageslim" alt="下载中，1MB/s"></p>
+<p><br></p>
+<h4 id="取回文件"><a href="#取回文件" class="headerlink" title="取回文件"></a><strong>取回文件</strong></h4><p>下好了之后，文件是在电脑上，怎么取回来呢？看你主要下什么东西、有什么设备，有两种方案</p>
+<h5 id="1-使用FTP服务器"><a href="#1-使用FTP服务器" class="headerlink" title="1.使用FTP服务器"></a><strong>1.使用FTP服务器</strong></h5><p>好处：简单、<del>可设密码</del>（Win文件共享也可以）、速度快（视具体情况）、外网可访问（具体请百度，我偷个懒应该没人发现吧）<br>缺点：搭建需要软件支持（Win server系统除外）、速度不太稳定（视具体情况）</p>
+<h5 id="2-Windows文件共享"><a href="#2-Windows文件共享" class="headerlink" title="2.Windows文件共享"></a><strong>2.Windows文件共享</strong></h5><p>好处：更适合视频文件、更适合组建<code>家庭媒体中心</code><br>缺点：安卓支持读写的应用不多、搭建比较过程复杂</p>
+<p><strong>教程：</strong><br>右键<code>此电脑（计算机）</code>，打开<code>管理</code>，按图片打开<code>用户</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/FGk99I04hj.png?imageslim" alt="用户"></p>
+<p>双击<code>Guest</code>，把<code>账户已禁用</code>勾掉，保存<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/ABfBi1mHEa.png?imageslim" alt="Guest"></p>
+<p>打开<code>网络与共享中心</code>（控制面板找），找到<code>高级共享设置</code>，往下拉，找到<code>所有网络</code>，展开（点一下右边的倒箭头），找到最后一项<code>密码保护的共享</code>，关掉，保存更改<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/d24aIC4Eka.png?imageslim" alt="密码保护的共享"></p>
+<p>找到<code>Aria2</code>目录下的<code>Download</code>文件夹，右击，打开<code>属性</code>，切换到<code>共享</code>选项卡，点击<code>共享</code>按钮<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/AGgea1l0Dc.png?imageslim" alt="属性"></p>
+<p>打开列表，选<code>Guest</code>，点击添加<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/FIf47BGab9.png?imageslim" alt="列表"></p>
+<p>把权限级别改为<code>读取/写入</code>，保存<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/aG9HA8F5a0.png?imageslim" alt="权限级别"></p>
+<p>接下来换到手机，在手机上安装<code>ES文件浏览器</code>，打开<br>打开侧边栏，点击<code>局域网</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/g9GmbjIHE4.jpeg?imageslim" alt="侧边栏"></p>
+<p>点击下面的<code>扫描</code>，然后<code>隐藏</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/CJeea2jbD0.jpeg?imageslim" alt="扫描中..."></p>
+<p>不一会，你的电脑就扫描出来了，点击进去<br>如果提示登陆，勾选<code>匿名</code>，直接登陆<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/cJ03mI32DJ.jpeg?imageslim" alt="扫描结果"></p>
+<p>可以看到，里面有刚刚的<code>Download</code>文件夹，然后把你的文件复制出来就行啦<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/dE8L080mAh.jpeg?imageslim" alt="Download文件夹"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Aria2/" rel="tag"># Aria2</a>
+          
+            <a href="/tags/下载/" rel="tag"># 下载</a>
+          
+            <a href="/tags/回收利用/" rel="tag"># 回收利用</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/05/给你的博客做个自定义404页面/" rel="prev" title="给你的博客做个自定义404页面">
+                给你的博客做个自定义404页面 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDEzMS82Njg2"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">XcantloadX</p>
+              <p class="site-description motion-element" itemprop="description">mc和编程爱好者。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/XcantloadX" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:3188996979@qq.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=3188996979" target="_blank" title="QQ">
+                    
+                      <i class="fa fa-fw fa-globe"></i>QQ</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://tieba.baidu.com/home/main?un=yrvqw565&fr=index&red_tag=u1456707309" target="_blank" title="百度贴吧">
+                    
+                      <i class="fa fa-fw fa-globe"></i>百度贴吧</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.mcbbs.net/home.php?mod=space&uid=2300842" target="_blank" title="MCBBS">
+                    
+                      <i class="fa fa-fw fa-globe"></i>MCBBS</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#利用Aria2和旧电脑打造一台下载机"><span class="nav-number">1.</span> <span class="nav-text">利用Aria2和旧电脑打造一台下载机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#电脑部分"><span class="nav-number">1.1.</span> <span class="nav-text">电脑部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载并运行Aria2"><span class="nav-number">1.1.1.</span> <span class="nav-text">下载并运行Aria2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FTP-服务器"><span class="nav-number">1.1.2.</span> <span class="nav-text">FTP 服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手机部分"><span class="nav-number">1.2.</span> <span class="nav-text">手机部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装并配置Yandex-Browser"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">安装并配置Yandex Browser</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取链接"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">获取链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加任务"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">添加任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#取回文件"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">取回文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-使用FTP服务器"><span class="nav-number">1.2.0.4.1.</span> <span class="nav-text">1.使用FTP服务器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-Windows文件共享"><span class="nav-number">1.2.0.4.2.</span> <span class="nav-text">2.Windows文件共享</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">XcantloadX</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("gBM7gSNl3z8Jv3AhVjf5bJ2Q-gzGzoHsz", "0eDlxDvhaQU21fTLfXmMwdF4");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
