@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo 阅读量 api.leancloud.cn 解析失败]]></title>
+    <url>%2F2017%2F10%2F21%2FHexo-%E9%98%85%E8%AF%BB%E9%87%8F-api-leancloud-cn-%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%2F</url>
+    <content type="text"><![CDATA[近期，国家有关部门和运营商对网络基础设施进行了更严格的管制，其中包含一些针对 DNS 系统的调整。LeanCloud 国内节点 API 的老版域名 api.leancloud.cn 意外地受到了波及，因此在国外一些地区和国内少数地区会出现一定概率的解析错误（DNS 污染），在访问这个域名时可能会出现间歇性的失败。 这会导致博客的阅读量无法正常显示 HOSTS 文件法 因此在国外一些地区和国内少数地区会出现一定概率的解析错误（DNS 污染） 既然是 DNS 污染，我们就从 HOSTS 文件入手 打开DNS 查询工具，输入通知里提到的api.leancloud.cn，点击检测 会出现很多 IP ，选一个 TTL 值最小的 IP ，复制出来 打开C:\Windows\System32\drivers\etc（这是 Win 7 的，其他系统自行搜索），找到HOSTS文件，右键用记事本打开 输入1IP 地址 api.leancloud.cn 保存退出 网址法HOSTS 文件法只有你自己看得见阅读数，别人看不见，除非别人也改了 HOSTS 文件，那就要从根源文件入手了 打开 LeanCloud ，进入设置 → 应用 Key，复制 App ID 打开https://app-router.leancloud.cn/2/route?appId= &lt;替换为 appId&gt;，复制api_server后面的地址 下载 av-core-mini-0.6.4.js，打开，搜索https，将https://api.leancloud.cn替换为刚刚复制的地址 把改过的av-core-mini-0.6.4.js文件上传到一个可以提取直链（访问后可以直接看到内容）的网站，比如七牛云等 复制直链，打开你的网站\themes\next\layout\_third-party\analytics\lean-analytics.swig，把https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js替换为刚刚复制的直链，保存 再访问看看，可以了]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>阅读量</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[利用 Hexo + Github Pages 搭建免费博客 - 第一次运行 - Win（一）]]></title>
     <url>%2F2017%2F10%2F20%2F%E5%88%A9%E7%94%A8-Hexo-Github-Pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%BF%90%E8%A1%8C-Win%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
     <content type="text"><![CDATA[Hexo 是一个免费静态博客开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，支持评论、分类、标签、图片等。 教程涉及到很多命令，你可以在Hexo 官方文档里找到，当然，你也可以不弄懂它 配置环境Node.js去 Node.js 官网 下载对应你的系统的版本64 位直接点第一个绿色按钮32 位点下面的Other Downloads，进去找到第一个32-bit的按钮 安装都是傻瓜式的一直点Next Git由于众所周知的原因，从官网下载速度非常慢，所以我把最新的的版本（2.14.2.3）传到了百度云，点击传送安装过程也是傻瓜式一直按Next 安装 Hexo在任意位置右键，点击Git Bash Here如果你不习惯 Git 的命令行，你也可以用 Cmd ，都是一样的效果（小技巧：按住Shift键并右键，选择在此处打开命令窗口，可以直接在此路径下打开 cmd） 执行1npm install -g hexo-cli 安装比较慢，没反应是正常现象，如果很久都没反应，按Ctrl + C强行停止，再输入命令尝试 出现$符号就可以继续操作了 配置博客第一次运行在任意位置右键，选择Git Bash Here，执行1hexo init 文件夹名 文件夹名字随意 复制文件中，时间较长，喝杯咖啡耐心等待… 出现INFO Start blogging with Hexo!就安装完成了 依次执行（//后面的是注释，不需要执行）：12cd 文件夹名hexo start //可简写为 hexo s （小技巧：如果文件夹名较长，可以输入cd 名字的前一部分 + *，如果是英文，注意区分大小写！） 出现INFO Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.时，你的博客就在本地开始运行了，注意只是本地，也就是只有你能看到，等会我们再上传到云端 访问 http://localhost:4000/，看见没？你的博客已经运行起来了！]]></content>
@@ -14,7 +26,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hexo s 提示 Local hexo not found in XXX 的解决方法]]></title>
-    <url>%2F2017%2F10%2F20%2FHexo%20s%20%E6%8F%90%E7%A4%BA%20Local%20hexo%20not%20found%20in%20XXX%20%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
+    <url>%2F2017%2F10%2F20%2FHexo-s-%E6%8F%90%E7%A4%BA-Local-hexo-not-found-in-XXX-%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[需要转移 Hexo 文件到另外一台电脑，把 Hexo 文件夹里的所有文件复制到另一台电脑上，配置好 Hexo，最后hexo s时却提示12ERROR Local hexo not found in G:\XcantloadXERROR Try running: &apos;npm install hexo --save&apos; 的解决方法 解决方法查找资料后，得知是因为node_modules文件夹的原因，需要删除重新安装 1.删除node_modules文件夹 2.执行1npm install 如果执行后只有光标一直在闪，没有任何反应，输入1npm install cnpm -g --registry=https://registry.npm.taobao.org 来安装国内的淘宝 NPM 镜像 安装时间比较久，可能会没反应，多等一会 安装完之后，输入cnpm install，时间也比较久 3.再hexo s就不会报错了]]></content>
       <categories>
         <category>Hexo</category>
