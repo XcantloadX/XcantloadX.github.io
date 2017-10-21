@@ -97,7 +97,7 @@
 <meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-21/30104304.jpg">
 <meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-21/45829512.jpg">
 <meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-21/27148379.jpg">
-<meta property="og:updated_time" content="2017-10-21T01:55:42.997Z">
+<meta property="og:updated_time" content="2017-10-21T02:22:25.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 阅读量 api.leancloud.cn 解析失败">
 <meta name="twitter:description" content="近期，国家有关部门和运营商对网络基础设施进行了更严格的管制，其中包含一些针对 DNS 系统的调整。LeanCloud 国内节点 API 的老版域名 api.leancloud.cn 意外地受到了波及，因此在国外一些地区和国内少数地区会出现一定概率的解析错误（DNS 污染），在访问这个域名时可能会出现间歇性的失败。  这会导致博客的阅读量无法正常显示">
@@ -457,8 +457,8 @@
 <p>打开 LeanCloud ，进入设置 → 应用 Key，复制 App ID<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-21/6924376.jpg" alt="LeanCloud"></p>
 <p>打开<code>https://app-router.leancloud.cn/2/route?appId= &lt;替换为 appId&gt;</code>，复制<code>api_server</code>后面的地址<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-21/15430057.jpg" alt="api_server"></p>
 <p>下载 <a href="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js" target="_blank" rel="external">av-core-mini-0.6.4.js</a>，打开，搜索<code>https</code>，将<code>https://api.leancloud.cn</code>替换为刚刚复制的地址<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-21/30104304.jpg" alt="av-core-mini-0.6.4.js"></p>
-<p>把改过的<code>av-core-mini-0.6.4.js</code>文件上传到一个<strong>可以提取直链</strong>（访问后可以直接看到内容）的网站，比如七牛云等</p>
-<p>复制直链，打开<code>你的网站\themes\next\layout\_third-party\analytics\lean-analytics.swig</code>，把<code>https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js</code>替换为刚刚复制的直链，保存<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-21/45829512.jpg" alt="lean-analytics.swig"></p>
+<p>把改过的<code>av-core-mini-0.6.4.js</code>文件上传到一个<strong>可以提取直链</strong>（访问后可以直接看到内容）的网站，比如<del>七牛云</del>（七牛云<strong>不支持 https</strong>）</p>
+<p>复制直链，打开<code>你的网站\themes\next\layout\_third-party\analytics\lean-analytics.swig</code>，把<code>https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js</code>替换为刚刚复制的直链，保存<br><strong>（注意：如果链接不是<code>https</code>的，请改为<code>https</code>，否则在本地没问题，上传之后就会报错）</strong><br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-21/45829512.jpg" alt="lean-analytics.swig"></p>
 <p>再访问看看，可以了<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-21/27148379.jpg" alt="博客"></p>
 
       
