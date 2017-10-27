@@ -13,8 +13,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[利用 Hexo + Github Pages 搭建免费博客 - 第一次运行 - Win（一）]]></title>
-    <url>%2F2017%2F10%2F20%2F%E5%88%A9%E7%94%A8-Hexo-Github-Pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%BF%90%E8%A1%8C-Win%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
+    <title><![CDATA[利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一）]]></title>
+    <url>%2F2017%2F10%2F20%2F%E5%88%A9%E7%94%A8-Hexo-Github-Pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%BF%90%E8%A1%8C-%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
     <content type="text"><![CDATA[Hexo 是一个免费静态博客开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，支持评论、分类、标签、图片等。 教程涉及到很多命令，你可以在Hexo 官方文档里找到，当然，你也可以不弄懂它 配置环境Node.js去 Node.js 官网 下载对应你的系统的版本64 位直接点第一个绿色按钮32 位点下面的Other Downloads，进去找到第一个32-bit的按钮 安装都是傻瓜式的一直点Next Git由于众所周知的原因，从官网下载速度非常慢，所以我把最新的的版本（2.14.2.3）传到了百度云，点击传送安装过程也是傻瓜式一直按Next 安装 Hexo在任意位置右键，点击Git Bash Here如果你不习惯 Git 的命令行，你也可以用 Cmd ，都是一样的效果（小技巧：按住Shift键并右键，选择在此处打开命令窗口，可以直接在此路径下打开 cmd） 执行1npm install -g hexo-cli 安装比较慢，没反应是正常现象，如果很久都没反应，按Ctrl + C强行停止，再输入命令尝试 出现$符号就可以继续操作了 配置博客第一次运行在任意位置右键，选择Git Bash Here，执行1hexo init 文件夹名 文件夹名字随意 复制文件中，时间较长，喝杯咖啡耐心等待… 出现INFO Start blogging with Hexo!就安装完成了 依次执行（//后面的是注释，不需要执行）：12cd 文件夹名hexo start //可简写为 hexo s （小技巧：如果文件夹名较长，可以输入cd 名字的前一部分 + *，如果是英文，注意区分大小写！） 出现INFO Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.时，你的博客就在本地开始运行了，注意只是本地，也就是只有你能看到，等会我们再上传到云端 访问 http://localhost:4000/，看见没？你的博客已经运行起来了！]]></content>
       <categories>
         <category>Hexo</category>
