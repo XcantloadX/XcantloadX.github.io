@@ -79,34 +79,42 @@
 
 
 
-<meta name="description" content="Hexo 是一个免费静态博客开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，支持评论、分类、标签、图片等。  教程涉及到很多命令，你可以在Hexo 官方文档里找到，当然，你也可以不弄懂它">
+<meta name="description" content="在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？（建议：最好两个都注册，后面我会说明为什么）">
 <meta name="keywords" content="Hexo,教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一）">
-<meta property="og:url" content="http://xcantloadx.github.io/2017/10/20/利用-Hexo-Github-Pages-搭建免费博客-第一次运行-（一）/index.html">
+<meta property="og:title" content="利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）">
+<meta property="og:url" content="http://xcantloadx.github.io/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/index.html">
 <meta property="og:site_name" content="MinePrograming">
-<meta property="og:description" content="Hexo 是一个免费静态博客开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，支持评论、分类、标签、图片等。  教程涉及到很多命令，你可以在Hexo 官方文档里找到，当然，你也可以不弄懂它">
+<meta property="og:description" content="在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？（建议：最好两个都注册，后面我会说明为什么）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/77346250.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/92850062.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/7035681.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/1855089.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/27152886.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/55195096.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/83776640.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/55940443.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/14634417.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/12230955.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/30094028.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/93020834.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/87105848.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/98884878.jpg">
-<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/26884540.jpg">
-<meta property="og:updated_time" content="2017-11-04T04:32:08.000Z">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/68900371.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/68900371.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/30365156.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/78510664.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/61934334.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/15991328.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/29471004.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/25332322.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/77080393.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/88847592.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/39643035.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/91345994.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/96439827.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/14388683.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/6861356.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/95529600.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/74136033.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/39060165.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/56187007.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/20154630.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/80786943.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/96028870.jpg">
+<meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/95564623.jpg">
+<meta property="og:updated_time" content="2017-11-10T06:54:35.643Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一）">
-<meta name="twitter:description" content="Hexo 是一个免费静态博客开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，支持评论、分类、标签、图片等。  教程涉及到很多命令，你可以在Hexo 官方文档里找到，当然，你也可以不弄懂它">
-<meta name="twitter:image" content="http://ouikhiirc.bkt.clouddn.com//17-10-14/77346250.jpg">
+<meta name="twitter:title" content="利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）">
+<meta name="twitter:description" content="在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？（建议：最好两个都注册，后面我会说明为什么）">
+<meta name="twitter:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-4/68900371.jpg">
 
 
 
@@ -136,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="http://xcantloadx.github.io/2017/10/20/利用-Hexo-Github-Pages-搭建免费博客-第一次运行-（一）/"/>
+  <link rel="canonical" href="http://xcantloadx.github.io/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/"/>
 
 
 
 
 
-  <title>利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一） | MinePrograming</title>
+  <title>利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二） | MinePrograming</title>
   
 
 
@@ -343,7 +351,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xcantloadx.github.io/2017/10/20/利用-Hexo-Github-Pages-搭建免费博客-第一次运行-（一）/">
+    <link itemprop="mainEntityOfPage" href="http://xcantloadx.github.io/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="XcantloadX">
@@ -360,7 +368,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一）</h1>
+          <h1 class="post-title" itemprop="name headline">利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）</h1>
         
 
         <div class="post-meta">
@@ -372,8 +380,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-20T19:56:16+08:00">
-                2017-10-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-10T14:53:02+08:00">
+                2017-11-10
               </time>
             
 
@@ -412,7 +420,7 @@
 
           
           
-             <span id="/2017/10/20/利用-Hexo-Github-Pages-搭建免费博客-第一次运行-（一）/" class="leancloud_visitors" data-flag-title="利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一）">
+             <span id="/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/" class="leancloud_visitors" data-flag-title="利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -443,27 +451,40 @@
       
 
       
-        <blockquote>
-<p>Hexo 是一个免费<strong>静态博客</strong>开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，<strong>支持评论、分类、标签、图片</strong>等。</p>
-</blockquote>
-<p><strong>教程涉及到很多命令，你可以在<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">Hexo 官方文档</a>里找到，当然，你也可以不弄懂它</strong></p>
-<p><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/77346250.jpg" alt="Hexo官网"><br><a id="more"></a></p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>去 <a href="http://nodejs.org/" target="_blank" rel="external">Node.js 官网</a> 下载对应你的系统的版本<br>64 位直接点<strong>第一个</strong>绿色按钮<br>32 位点下面的<code>Other Downloads</code>，进去找到<strong>第一个</strong><code>32-bit</code>的按钮<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/92850062.jpg" alt="node.js官网"><br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/7035681.jpg" alt="other Downloads页面"></p>
-<p>安装都是傻瓜式的一直点<code>Next</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/1855089.jpg" alt="下一步"><br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/27152886.jpg" alt="安装中..."></p>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>由于众所周知的原因，从官网下载速度非常慢，所以我把最新的的版本（2.14.2.3）传到了百度云，<a href="https://pan.baidu.com/s/1qY9eXJY" target="_blank" rel="external">点击传送</a><br>安装过程也是傻瓜式一直按<code>Next</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/55195096.jpg" alt="Git安装界面"><br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/83776640.jpg" alt="安装中..."></p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>在任意位置右键，点击<code>Git Bash Here</code><br><strong>如果你不习惯 Git 的命令行，你也可以用 Cmd ，都是一样的效果</strong><br>（小技巧：按住<code>Shift</code>键并右键，选择<code>在此处打开命令窗口</code>，可以直接在此路径下打开 cmd）<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/55940443.jpg" alt="右键菜单"></p>
-<p>执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/14634417.jpg" alt="命令"></p>
-<p>安装比较慢，没反应是正常现象，如果很久都没反应，按<code>Ctrl + C</code>强行停止，再输入命令尝试</p>
-<p>出现<strong><code>$</code></strong>符号就可以继续操作了<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/12230955.jpg" alt="安装完成"></p>
-<h2 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h2><h3 id="第一次运行"><a href="#第一次运行" class="headerlink" title="第一次运行"></a>第一次运行</h3><p>在任意位置右键，选择<code>Git Bash Here</code>，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init 文件夹名</div></pre></td></tr></table></figure></p>
-<p>文件夹名字随意<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/30094028.jpg" alt="命令"></p>
-<p>复制文件中，时间较长，喝杯咖啡耐心等待…<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/93020834.jpg" alt="安装中..."></p>
-<p>出现<code>INFO  Start blogging with Hexo!</code>就安装完成了<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/87105848.jpg" alt="安装完成"></p>
-<p>依次执行（<code>//</code>后面的是注释，不需要执行）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd 文件夹名</div><div class="line">hexo start //可简写为 hexo s</div></pre></td></tr></table></figure></p>
-<p>（小技巧：如果文件夹名较长，可以输入<code>cd 名字的前一部分 + *</code>，如果是英文，注意<strong>区分大小写</strong>！）</p>
-<p>出现<code>INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</code>时，你的博客就在<strong>本地</strong>开始运行了，注意只是本地，也就是只有你能看到，等会我们再上传到云端<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/98884878.jpg" alt="博客运行中"></p>
-<p>访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>，看见没？你的博客已经运行起来了！<br><img src="http://ouikhiirc.bkt.clouddn.com//17-10-14/26884540.jpg" alt="博客"></p>
+        <p>在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？<br><strong>（建议：最好两个都注册，后面我会说明为什么）</strong><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/68900371.jpg" alt="Github 主页"><br><a id="more"></a></p>
+<h2 id="Github-教程"><a href="#Github-教程" class="headerlink" title="Github 教程"></a>Github 教程</h2><h3 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h3><p>打开 <a href="https://github.com/" target="_blank" rel="external">Github 官网</a> ，在主页就有注册的地方<br>依次输入用户名，邮箱，密码，点击<code>Sign up for Github</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/68900371.jpg" alt="Github 主页"></p>
+<p>选择免费方案，点击<code>Continue</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/30365156.jpg" alt="注册页面 1"></p>
+<p>除非你以后想当程序员，否则就直接点<code>skip this step</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/78510664.jpg" alt="注册页面 2"></p>
+<p>打开你的邮箱，点击<code>Verify email address</code>验证邮箱<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/61934334.jpg" alt="邮箱页面"></p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p><strong>Q:什么是</strong><code>仓库</code><br><strong>A:简单来说，就是一个用来储存代码的网盘，不过比网盘要高级</strong></p>
+<p>进入 <a href="https://github.com" target="_blank" rel="external">Github 首页</a> ，点击右边的<code>New repositoriy</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/15991328.jpg" alt="Github 首页"></p>
+<p><code>Repository name</code>一栏填<strong>你的用户名.github.io</strong>，否则后面就无法上传<br>点击<code>Create repository</code><br>（由于我已经创建过同名的，所以按钮是灰色的）<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/29471004.jpg" alt="仓库创建页面"></p>
+<h3 id="配置-SSH-Key"><a href="#配置-SSH-Key" class="headerlink" title="配置 SSH Key"></a>配置 SSH Key</h3><p>打开 Git，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.email &quot;注册时的邮箱&quot; </div><div class="line">git config --global user.name &quot;注册时的用户名&quot;</div></pre></td></tr></table></figure></p>
+<p><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/25332322.jpg" alt="Git"></p>
+<p>输入下面的命令生成 Key<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;注册时的邮箱&quot;</div></pre></td></tr></table></figure></p>
+<p>Git 会提示你输入一个目录来存放 Key 文件，直接回车表示括号里的路径<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/77080393.jpg" alt="Git"></p>
+<p>输入一个密码，也可以不设密码，直接回车<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/88847592.jpg" alt="Git"></p>
+<p>再输一遍密码，之前没有就回车<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/39643035.jpg" alt="Git"></p>
+<p>进入存放 Key 文件的目录，打开<strong><code>id_rsa.pub</code></strong>文件（用文本编辑器，也可以用记事本），复制里面的内容<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/91345994.jpg" alt="id_rsa.pub 文件"></p>
+<p>进入 <a href="https://github.com/settings/keys" target="_blank" rel="external">Github 的 SSH Keys 设置页面</a>，点击<code>New SSH key</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/96439827.jpg" alt="SSH Keys 设置页面"></p>
+<p><code>Title</code>里随便输一个标题，<code>Key</code>里粘贴你刚刚复制的 Key，然后点击<code>Add SSH Key</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/14388683.jpg" alt="SSH Keys 设置页面"></p>
+<p>然后它会让你输入密码，输入后直接回车<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/6861356.jpg" alt="输入密码"></p>
+<h3 id="配置本地-Git"><a href="#配置本地-Git" class="headerlink" title="配置本地 Git"></a>配置本地 Git</h3><p>进入你的仓库，点击<code>SSH</code>按钮，复制<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/95529600.jpg" alt="SSH 地址"></p>
+<p>打开<strong><code>站点配置文件</code></strong>，找到<code>Deployment</code>一栏，按照下面修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:用户名/刚刚复制的地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>例如，我的是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:XcantloadX/XcantloadX.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>在博客根目录打开 Git，输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy //可简写为 hexo d</div></pre></td></tr></table></figure></p>
+<p>如果出现<code>ERROR Deployer not found: git</code>，运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>第一次上传会出现提示，输入<code>yes</code>回车即可<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/74136033.jpg" alt="提示"></p>
+<p>如果没有出现像下面一样的提示，就说明上传成功，你可以去<code>你的用户名.github.io</code>看看效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Please make sure you have the correct access rights and the repository exists.</div><div class="line">    at ChildProcess.&lt;anonymous&gt; (C:\Users\Administrator\Desktop\1\Desktop\XcantloadX - 副本\node_modules\hexo-util\lib\spawn.js:37:17)</div><div class="line">    at emitTwo (events.js:126:13)</div><div class="line">    at ChildProcess.emit (events.js:214:7)</div><div class="line">    at ChildProcess.cp.emit (C:\Users\Administrator\Desktop\1\Desktop\XcantloadX - 副本\node_modules\cross-spawn\lib\enoent.js:40:29)</div><div class="line">    at maybeClose (internal/child_process.js:925:16)</div><div class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)</div></pre></td></tr></table></figure></p>
+<h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2><p>访问 <a href="https://coding.net/" target="_blank" rel="external">Coding 官网</a>，由于 Coding 是中文的，注册账号的过程我就不截图了</p>
+<p>注册好后，访问 <a href="https://coding.net/user，点击右上角的`+`，选择项目" target="_blank" rel="external">https://coding.net/user，点击右上角的`+`，选择项目</a><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/39060165.jpg" alt="新建项目菜单"></p>
+<p>项目名称、公不公开随意，填写完后点击<code>创建项目</code><br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/56187007.jpg" alt="填写信息"></p>
+<p>按照图中顺序添加 Key （仍然是上次生成的）<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/20154630.jpg" alt="添加 Key"></p>
+<p>输入密码并确认<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/80786943.jpg" alt="输入密码"></p>
+<p>打开你新建的项目，复制 SSH 地址<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/96028870.jpg" alt="复制地址"></p>
+<p>打开<strong><code>站点配置文件</code></strong>，找到<code>Deployment</code>一栏，按照下面修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">        github: git@github.com:XcantloadX/XcantloadX.github.io.git</div><div class="line">        coding: 刚刚复制的地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/95564623.jpg" alt="Notepad++"></p>
+<p><code>hexo d</code>即可，若无错误提示，表明配置成功，可以去<code>https://用户名.coding.me/项目名</code>查看效果</p>
 
       
     </div>
@@ -496,8 +517,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/20/Hexo-s-提示-Local-hexo-not-found-in-XXX-的解决方法/" rel="next" title="Hexo s 提示 Local hexo not found in XXX 的解决方法">
-                <i class="fa fa-chevron-left"></i> Hexo s 提示 Local hexo not found in XXX 的解决方法
+              <a href="/2017/10/21/Hexo-阅读量-api-leancloud-cn-解析失败/" rel="next" title="Hexo 阅读量 api.leancloud.cn 解析失败">
+                <i class="fa fa-chevron-left"></i> Hexo 阅读量 api.leancloud.cn 解析失败
               </a>
             
           </div>
@@ -505,10 +526,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/21/Hexo-阅读量-api-leancloud-cn-解析失败/" rel="prev" title="Hexo 阅读量 api.leancloud.cn 解析失败">
-                Hexo 阅读量 api.leancloud.cn 解析失败 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -590,7 +607,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -679,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git"><span class="nav-number">1.2.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置博客"><span class="nav-number">2.</span> <span class="nav-text">配置博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一次运行"><span class="nav-number">2.1.</span> <span class="nav-text">第一次运行</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-教程"><span class="nav-number">1.</span> <span class="nav-text">Github 教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册账号"><span class="nav-number">1.1.</span> <span class="nav-text">注册账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">1.2.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-SSH-Key"><span class="nav-number">1.3.</span> <span class="nav-text">配置 SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置本地-Git"><span class="nav-number">1.4.</span> <span class="nav-text">配置本地 Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding"><span class="nav-number">2.</span> <span class="nav-text">Coding</span></a></li></ol></div>
             
 
           </div>
