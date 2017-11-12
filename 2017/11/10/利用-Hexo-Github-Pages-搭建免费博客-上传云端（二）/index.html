@@ -83,7 +83,7 @@
 <meta name="keywords" content="Hexo,教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）">
-<meta property="og:url" content="http://xcantloadx.github.io/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/index.html">
+<meta property="og:url" content="http://xcantloadx.top/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/index.html">
 <meta property="og:site_name" content="MinePrograming">
 <meta property="og:description" content="在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？（建议：最好两个都注册，后面我会说明为什么）">
 <meta property="og:locale" content="zh-Hans">
@@ -110,7 +110,7 @@
 <meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/80786943.jpg">
 <meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/96028870.jpg">
 <meta property="og:image" content="http://ouikhiirc.bkt.clouddn.com//17-11-10/95564623.jpg">
-<meta property="og:updated_time" content="2017-11-10T06:54:35.643Z">
+<meta property="og:updated_time" content="2017-11-12T03:57:25.997Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）">
 <meta name="twitter:description" content="在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？（建议：最好两个都注册，后面我会说明为什么）">
@@ -144,7 +144,7 @@
 
 
 
-  <link rel="canonical" href="http://xcantloadx.github.io/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/"/>
+  <link rel="canonical" href="http://xcantloadx.top/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/"/>
 
 
 
@@ -341,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xcantloadx.github.io/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/">
+    <link itemprop="mainEntityOfPage" href="http://xcantloadx.top/2017/11/10/利用-Hexo-Github-Pages-搭建免费博客-上传云端（二）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="XcantloadX">
@@ -461,7 +461,7 @@
 <p>然后它会让你输入密码，输入后直接回车<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/6861356.jpg" alt="输入密码"></p>
 <h3 id="配置本地-Git"><a href="#配置本地-Git" class="headerlink" title="配置本地 Git"></a>配置本地 Git</h3><p>进入你的仓库，点击<code>SSH</code>按钮，复制<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/95529600.jpg" alt="SSH 地址"></p>
 <p>打开<strong><code>站点配置文件</code></strong>，找到<code>Deployment</code>一栏，按照下面修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:用户名/刚刚复制的地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>例如，我的是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:XcantloadX/XcantloadX.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>例如，我的是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:XcantloadX/xcantloadx.top.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
 <p>在博客根目录打开 Git，输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy //可简写为 hexo d</div></pre></td></tr></table></figure></p>
 <p>如果出现<code>ERROR Deployer not found: git</code>，运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
 <p>第一次上传会出现提示，输入<code>yes</code>回车即可<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-4/74136033.jpg" alt="提示"></p>
@@ -472,7 +472,7 @@
 <p>按照图中顺序添加 Key （仍然是上次生成的）<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/20154630.jpg" alt="添加 Key"></p>
 <p>输入密码并确认<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/80786943.jpg" alt="输入密码"></p>
 <p>打开你新建的项目，复制 SSH 地址<br><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/96028870.jpg" alt="复制地址"></p>
-<p>打开<strong><code>站点配置文件</code></strong>，找到<code>Deployment</code>一栏，按照下面修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">        github: git@github.com:XcantloadX/XcantloadX.github.io.git</div><div class="line">        coding: 刚刚复制的地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>打开<strong><code>站点配置文件</code></strong>，找到<code>Deployment</code>一栏，按照下面修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">        github: git@github.com:XcantloadX/xcantloadx.top.git</div><div class="line">        coding: 刚刚复制的地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
 <p><img src="http://ouikhiirc.bkt.clouddn.com//17-11-10/95564623.jpg" alt="Notepad++"></p>
 <p><code>hexo d</code>即可，若无错误提示，表明配置成功，可以去<code>https://用户名.coding.me/项目名</code>查看效果</p>
 
