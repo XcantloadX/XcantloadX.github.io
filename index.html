@@ -892,14 +892,31 @@
 
       
         
-          <p>有没有想过为自己的域名添加一个子域名来建一个分站？或者用来测试？<br>那就进来吧<br><img src="http://ouikhiirc.bkt.clouddn.com/2017-11-19/66101709.jpg" alt="访问测试"><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/19/为你的域名添加子域名（二级域名）并绑定网站/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <h2 id="确定可添加子域名的个数（可跳过）"><a href="#确定可添加子域名的个数（可跳过）" class="headerlink" title="确定可添加子域名的个数（可跳过）"></a>确定可添加子域名的个数（可跳过）</h2><p>访问你注册域名的注册商，仔细找找有没有标注<br>这里拿 Namesilo 举例子，访问 <a href="https://www.namesilo.com" target="_blank" rel="external">Namesilo 官网</a>，登录，进入你的域名管理界面，找到<code>Sub-Domain Forwarding</code><br><img src="http://ouikhiirc.bkt.clouddn.com/2017-11-19/11460671.jpg" alt="Namesilo 官网"></p>
+<p>进入后点击右上角的<code>HELP</code>，可以看见 Namesilo 最多可以创建 50 个子域名<br><img src="http://ouikhiirc.bkt.clouddn.com/2017-11-19/72191556.jpg" alt="HELP 内容"></p>
+<h2 id="添加子域名"><a href="#添加子域名" class="headerlink" title="添加子域名"></a>添加子域名</h2><p>进入 <strong><code>DNS 管理页面</code>（如果是第三方就开第三方）</strong>，注意一定是<strong><code>DNS 管理页面</code></strong>！<br><strong>（这里以 DNSPod 为例，不同网站具体情况可能不同）</strong><br>添加记录：</p>
+<table>
+<thead>
+<tr>
+<th>主机记录</th>
+<th>记录类型</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>填你要添加的子域名<strong>（不包括主域名后缀）</strong></td>
+<td>A（IP） 或者 CNAME（域名）</td>
+<td>记录类型是 A 就填要绑定的 IP，是 CNAME 就填要绑定的另一个域名</td>
+</tr>
+</tbody>
+</table>
+<p><img src="http://ouikhiirc.bkt.clouddn.com/2017-11-19/45619651.jpg" alt="添加记录"></p>
+<p>再进入被绑定的一方，进行设置<br><strong>（这里以 000 webhost 为例）</strong><br><img src="http://ouikhiirc.bkt.clouddn.com/2017-11-19/58476415.jpg" alt="绑定域名"></p>
+<p>等 DNS 生效，访问看看，是不是可以了？<br><img src="http://ouikhiirc.bkt.clouddn.com/2017-11-19/66101709.jpg" alt="访问测试"></p>
+
+          
         
       
     </div>

@@ -38,7 +38,7 @@
   <entry>
     <title><![CDATA[为你的域名添加子域名（二级域名）并绑定网站]]></title>
     <url>%2F2017%2F11%2F19%2F%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0%E5%AD%90%E5%9F%9F%E5%90%8D%EF%BC%88%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%EF%BC%89%E5%B9%B6%E7%BB%91%E5%AE%9A%E7%BD%91%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[有没有想过为自己的域名添加一个子域名来建一个分站？或者用来测试？那就进来吧 确定可添加子域名的个数访问你注册域名的注册商，仔细找找，这里拿 Namesilo 举例子访问 Namesilo 官网，登录，进入你的域名管理界面，找到Sub-Domain Forwarding 进入后点击右上角的HELP，可以看见 Namesilo 最多可以创建 50 个子域名 添加子域名进入 DNS 管理页面（如果是第三方就打开第三方），注意一定是DNS 管理页面！（这里以 DNSPod 为例，具体情况可能不同）添加记录：|主机记录|记录类型|记录值||——–|——–|——||填你要添加的子域名（不包括后缀）|A 或者 CNAME|记录类型是 A 就填要绑定的 IP，是 CNAME 就填要绑定的地址 在进入被绑定的一方，进行设置（这里以 000 webhost 为例） 等上几分钟，等 DNS 生效，访问看看，是不是可以了？]]></content>
+    <content type="text"><![CDATA[确定可添加子域名的个数（可跳过）访问你注册域名的注册商，仔细找找有没有标注这里拿 Namesilo 举例子，访问 Namesilo 官网，登录，进入你的域名管理界面，找到Sub-Domain Forwarding 进入后点击右上角的HELP，可以看见 Namesilo 最多可以创建 50 个子域名 添加子域名进入 DNS 管理页面（如果是第三方就开第三方），注意一定是DNS 管理页面！（这里以 DNSPod 为例，不同网站具体情况可能不同）添加记录： 主机记录 记录类型 记录值 填你要添加的子域名（不包括主域名后缀） A（IP） 或者 CNAME（域名） 记录类型是 A 就填要绑定的 IP，是 CNAME 就填要绑定的另一个域名 再进入被绑定的一方，进行设置（这里以 000 webhost 为例） 等 DNS 生效，访问看看，是不是可以了？]]></content>
       <categories>
         <category>网站</category>
       </categories>
