@@ -701,8 +701,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-04T16:14:59+08:00">
-                2017-11-04
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-24T17:42:42+08:00">
+                2017-12-24
               </time>
             
           </span>
@@ -769,15 +769,43 @@
 
       
         
-          <p>利用这个下载神器—— Aria2，可以把你的旧电脑 / 手机变成一台免费的（电费除外）的 24 小时运行的下载机，比那些所谓的“离线下载”好多了<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg" alt="下载中，1MB/s"></p>
-<p>Aria2是全平台的，Windows、MAC、Linux、安卓等等。<del>本教程只提供Win的教程，其他系统你们自己捣鼓去</del><br><strong>安卓教程正在编写</strong><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/03/利用Aria2和旧电脑打造一台下载机/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <p>利用下载神器—— Aria2，可以把你的旧电脑 / 手机变成一台免费的（电费和网费除外）的可 <strong>24 小时运行</strong>的下载机，比广告一大堆的迅雷好用多了<br>当然，你也可以装在电脑上当做普通下载工具来用<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg" alt="手机控制页面"></p>
+<p>Aria2 支持 Windows、OS X、Android<br><strong>觉得电脑太耗电？Android 教程正在编写之中</strong></p>
+<h2 id="电脑部分"><a href="#电脑部分" class="headerlink" title="电脑部分"></a>电脑部分</h2><h3 id="下载并运行-Aria2"><a href="#下载并运行-Aria2" class="headerlink" title="下载并运行 Aria2"></a><strong>下载并运行 Aria2</strong></h3><p>找台 Win XP 以上的电脑，下载这个：<a href="http://quamiller.com/17649679/aria2" target="_blank" rel="external">Aria2 懒人包</a><br><del>Win XP 在<a href="https://github.com/q3aql/aria2-static-builds/blob/master/README.md" target="_blank" rel="external">这里</a>下载<code>Windows downloads</code>下的第一个文件，解压后把里面的<code>aria2c.exe</code>替换到懒人包里</del><br>Win XP 版已整合进懒人包里，将<code>aria2c（XP 请改名为“aria2c.exe”并覆盖至“Aria2”文件夹）.exe</code>改名为<code>aria2c.exe</code>并覆盖至<code>Aria2</code>文件夹即可</p>
+<p>解压，可以看见这些文件<br><strong>（已更新，实际文件与截图稍有不同）</strong><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/mF7hH99egB.png" alt="文件"></p>
+<p>双击<code>运行.bat</code>，Aria2 就开始运行了<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/f2AFkBFI84.png" alt="运行界面"></p>
+<p>打开 <a href="http://aria2c.com/" target="_blank" rel="external">Aria2 控制台</a> 来查看效果，如果<strong>没有提示</strong><code>Aria2 PRC 服务器错误</code>就表示一切正常<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/Lc578L90le.png" alt="GUI界面"></p>
+<h3 id="FTP-服务器"><a href="#FTP-服务器" class="headerlink" title="FTP 服务器"></a><strong>FTP 服务器</strong></h3><p>假如文件下载完之后要传到手机上，总不可能再插根数据线来传吧？<br>我们可以用<code>FTPServer</code>这个软件来新建一个 FTP 服务器</p>
+<p>软件已经打包到懒人包里，使用方法非常简单：<br>打开 FTPServer，将<code>共享目录</code>设置为<code>Aria2 懒人包所在目录\Aria2</code>（例如我的在 E 盘，就设置为<code>E:\Aria2 懒人包\Aria2</code>），点<code>启动</code>，Win 端就配置好了<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/7dJA9d1C70.png" alt="FTP服务器"></p>
+<hr>
+<h2 id="手机部分"><a href="#手机部分" class="headerlink" title="手机部分"></a>手机部分</h2><h3 id="安装并配置Yandex-Browser"><a href="#安装并配置Yandex-Browser" class="headerlink" title="安装并配置Yandex Browser"></a><strong>安装并配置Yandex Browser</strong></h3><p>到应用市场下载<code>Yandex Browser</code>，推荐去 Google Play 下<br><a href="http://www.appchina.com/app/com.yandex.browser" target="_blank" rel="external">应用汇直达链接</a><br><a href="https://play.google.com/store/apps/details?id=com.yandex.browser&amp;hl=zh-CN" target="_blank" rel="external">Googel Play 直达链接</a><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/jh6Cf8ccm9.jpeg" alt="酷安"></p>
+<p>用 Yandex Browser 打开 <a href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="external">Tampermonkey-Chrome 网上应用店</a> ，<strong>别忘了挂上你的梯子（不懂的百度<code>V P N</code>）</strong><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/bCm93bKhjI.jpeg" alt="网上应用店"></p>
+<p>安装<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/e0DJgE4mB2.jpeg" alt="安装"></p>
+<p>安装之后会弹出来一个网页，不管它<br>访问 <a href="https://greasyfork.org/zh-CN" target="_blank" rel="external">Greasy Fork</a> ，点主页上的<code>baidu.com</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/b8D1hfAC80.jpeg" alt="Greasy Fork主页"></p>
+<p>找到<code>EX-百度云盘</code>，点开，安装<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/m97GalHedI.jpeg" alt="EX-百度云盘"><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/bgEjiHJGCF.jpeg" alt="安装确认"></p>
+<h3 id="获取链接"><a href="#获取链接" class="headerlink" title="获取链接"></a><strong>获取链接</strong></h3><p>打开你的百度云客户端，找到你要下载的文件，分享，然后复制链接<br>（推荐选 <strong>1 天后失效</strong>，可以避免忘记取消分享的情况，如果是重要的文件，最好<strong>设密码</strong>）<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/C5F4I68k9f.jpeg" alt="分享"></p>
+<p>在 <strong>Yandex Browser</strong> 里打开刚刚复制的链接，选中你要下载的文件（如果有多个文件的话），你会发现在原来的下载按钮旁会多出来一个<code>EX-下载</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/hIJckI9I7l.jpeg" alt="EX-下载"></p>
+<p><strong>确认你没有登陆之后</strong>，点一下<code>EX-下载</code>，再选择<code>复制链接</code>，复制<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/09IDh838eL.jpeg" alt="复制链接"></p>
+<p><br></p>
+<h3 id="添加任务"><a href="#添加任务" class="headerlink" title="添加任务"></a><strong>添加任务</strong></h3><p>用浏览器打开 <a href="http://aria2c.com/" target="_blank" rel="external">Aria2 控制台</a> ，先不着急下载，点右上角的<code>设置</code>（像扳手一样的），第一项里面默认是<code>http://localhost:6800/jsonrpc</code><br>我们把它改为<code>http://你的内网IP:6800/jsonrpc</code>（<a href="http://jingyan.baidu.com/article/066074d6943977c3c21cb0e5.html" target="_blank" rel="external">如何查看IP？</a>），假如我的内网 IP 是<code>192.168.0.101</code>就改为<code>http://192.168.0.101:6800/jsonrpc</code></p>
+<p>如果你家里有很多个设备的话，最好在路由器里面绑定 MAC 地址，来固定一个内网 IP，在<a href="https://jingyan.baidu.com/article/1876c852956be9890b1376cf.html" target="_blank" rel="external">这里</a>查看教程<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/2Abcmd2K0m.jpeg" alt="设置界面"></p>
+<p>然后点击右上角的<code>添加</code>，把你刚刚复制的链接粘贴进去，文件名、保存位置什么的不用管，<strong>唯一</strong>要看一下的是<code>分块数量</code>和<code>最大连接数</code><br><strong>理论上</strong>这两个越大，下载速度越快<br><code>分块数量</code>无限制，<code>最大连接数</code>最多为16<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/E2871Dd6kh.jpeg" alt="添加任务"></p>
+<p>然后愉快地看着它高速的下载吧<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/fldLJCjc1e.jpeg" alt="下载中，1MB/s"></p>
+<h3 id="取回文件"><a href="#取回文件" class="headerlink" title="取回文件"></a><strong>取回文件</strong></h3><h4 id="1-使用-FTP-服务器"><a href="#1-使用-FTP-服务器" class="headerlink" title="1.使用 FTP 服务器"></a><strong>1.使用 FTP 服务器</strong></h4><p>好处：简单、速度快、外网可访问<br>缺点：搭建需要软件支持<br><del>（过于简单，这里不再多说，自行百度<code>手机如何连接 FTP 服务器</code>）</del><br><strong>教程将会在第三次修改中加入</strong></p>
+<h4 id="2-Windows-文件共享"><a href="#2-Windows-文件共享" class="headerlink" title="2.Windows 文件共享"></a><strong>2.Windows 文件共享</strong></h4><p>好处：更适合视频文件、更适合组建<code>家庭媒体中心</code><br>缺点：安卓支持读写的应用不多、搭建比较过程复杂、速度不太稳定（视具体情况）</p>
+<p><strong>教程：</strong><br>右键<code>此电脑（计算机）</code>，打开<code>管理</code>，按图片打开<code>用户</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/FGk99I04hj.png" alt="用户"></p>
+<p>双击<code>Guest</code>，把<code>账户已禁用</code>勾掉，保存<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/ABfBi1mHEa.png" alt="Guest"></p>
+<p>打开<code>网络与共享中心</code>（控制面板找），找到<code>高级共享设置</code>，往下拉，找到<code>所有网络</code>，展开（点一下右边的倒箭头），找到最后一项<code>密码保护的共享</code>，关掉，保存更改<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/d24aIC4Eka.png" alt="密码保护的共享"></p>
+<p>找到<code>Aria2</code>目录下的<code>Download</code>文件夹，右击，打开<code>属性</code>，切换到<code>共享</code>选项卡，点击<code>共享</code>按钮<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/AGgea1l0Dc.png" alt="属性"></p>
+<p>打开列表，选<code>Guest</code>，点击添加<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/FIf47BGab9.png" alt="列表"></p>
+<p>把权限级别改为<code>读取/写入</code>，保存<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/aG9HA8F5a0.png" alt="权限级别"></p>
+<p>接下来换到手机，在手机上安装<code>ES文件浏览器</code>，打开<br>打开侧边栏，点击<code>局域网</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/g9GmbjIHE4.jpeg" alt="侧边栏"></p>
+<p>点击下面的<code>扫描</code>，然后<code>隐藏</code><br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/CJeea2jbD0.jpeg" alt="扫描中..."></p>
+<p>不一会，你的电脑就扫描出来了，点击进去<br>如果提示登陆，勾选<code>匿名</code>，直接登陆<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/cJ03mI32DJ.jpeg" alt="扫描结果"></p>
+<p>可以看到，里面有刚刚的<code>Download</code>文件夹，然后把你的文件复制出来就行啦<br><img src="http://ouikhiirc.bkt.clouddn.com/image/171003/dE8L080mAh.jpeg" alt="Download文件夹"></p>
+
+          
         
       
     </div>
