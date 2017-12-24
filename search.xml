@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[系统自带的做教程、求助的好工具]]></title>
+    <url>%2F2017%2F12%2F24%2F%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%81%9A%E6%95%99%E7%A8%8B%E3%80%81%E6%B1%82%E5%8A%A9%E7%9A%84%E5%A5%BD%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[别人问你一个电脑问题，截一大堆图，写一大堆字，不管怎么说还是说不清楚这时候就要轮到一个系统自带的，你可能连听都没听过的工具，叫做问题步骤记录器 运行程序按Win + R快捷键打开运行，输入PSR(不区分大小写)，回车 使用方法点击开始记录，系统就会自动记录你的每一步操作，并截一张图 在记录过程中，如果需要重点突出某个地方或进行解释，可以点击添加注释 选择一片区域，写好注释，确定即可 操作完毕之后，点击停止录制 文件介绍保存的是.zip文件，解压后，可以看见一个.mhtml后缀的文件（补充：.mhtml是一种聚合HTML文件，只能用 Internet Explorer 4.0及更高版本、Opera、Mozilla Firefox 浏览器打开） 打开，可以看到每一步都非常详细地记录过，并配有截图注释部分也有写出 最后面还有更详细的信息]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何访问虚拟机（另一台设备）上运行的 Web 项目]]></title>
     <url>%2F2017%2F12%2F16%2F%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%88%E5%8F%A6%E4%B8%80%E5%8F%B0%E8%AE%BE%E5%A4%87%EF%BC%89%E4%B8%8A%E8%BF%90%E8%A1%8C%E7%9A%84-Web-%E9%A1%B9%E7%9B%AE%2F</url>
     <content type="text"><![CDATA[怎样访问另外一台电脑或者虚拟机上运行的 Web 项目呢？（注意：此处用的是 VMware Workstation，其他虚拟机类似） 虚拟机（运行 Web 项目的设备）开启你的虚拟机，点击虚拟机 → 设置 切换到网络适配器，选择桥接模式，确定（注意：非虚拟机不需要做上面这两步） 在虚拟机（另一台电脑）中依次打开网络和共享中心 → 查看完整映射 将鼠标放在第一个图标上，记下MAC 地址 运行你的 Web 项目，注意记下端口 主机（访问 Web 项目的设备）在主机端打开路由器管理界面，查看有哪些设备连接到路由器，并将 MAC 地址与那些设备比较，把比中的设备的 IP 地址复制下来 在浏览器里访问 复制的 IP 地址 + 端口号，]]></content>
