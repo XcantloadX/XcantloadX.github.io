@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何在不安装软件的情况下快速删除大量文件]]></title>
+    <url>%2F2018%2F01%2F20%2F%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E5%BF%AB%E9%80%9F%E5%88%A0%E9%99%A4%E5%A4%A7%E9%87%8F%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[我们都知道，Windows 在删除文件夹时会先统计里面文件的数量，如果有很多文件，那就要等上半天这篇教程将会告诉你如何不安装额外的软件，也能快速删除大量文件 使用 cmd 命令在你要删除的文件夹的空白地方按住Shift并右击，选择在此处打开命令窗口 在打开的窗口里分别输入一下命令：12del /s /q /f 文件夹rd /s /q 文件夹 如果没有程序正在使用文件夹，文件夹就会被顺利删除 添加右键菜单新建一个 txt，粘贴一下内容1234567Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\Directory\shell\Del]@=&quot;快速删除大量文件（不可撤销！）&quot;[HKEY_CLASSES_ROOT\Directory\shell\Del\command]@=&quot;cmd /c del /s /q /f \&quot;%1\&quot; &amp;&amp; rd /s /q \&quot;%1\&quot; &amp;&amp; echo 删除完成，5 秒后自动关闭... &amp;&amp; ping 127.0.0.1 -n 5 &gt; nul&quot; 另存为.reg文件，打开，确认导入 对着一个文件夹右键试试，是不是有效果了？]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>cmd</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[系统自带的做教程、求助的好工具]]></title>
     <url>%2F2017%2F12%2F24%2F%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%81%9A%E6%95%99%E7%A8%8B%E3%80%81%E6%B1%82%E5%8A%A9%E7%9A%84%E5%A5%BD%E5%B7%A5%E5%85%B7%2F</url>
     <content type="text"><![CDATA[别人问你一个电脑问题，截一大堆图，写一大堆字，不管怎么说还是说不清楚这时候就要轮到一个系统自带的，你可能连听都没听过的工具，叫做问题步骤记录器 运行程序按Win + R快捷键打开运行，输入PSR(不区分大小写)，回车 使用方法点击开始记录，系统就会自动记录你的每一步操作，并截一张图 在记录过程中，如果需要重点突出某个地方或进行解释，可以点击添加注释 选择一片区域，写好注释，确定即可 操作完毕之后，点击停止录制 文件介绍保存的是.zip文件，解压后，可以看见一个.mhtml后缀的文件（补充：.mhtml是一种聚合HTML文件，只能用 Internet Explorer 4.0及更高版本、Opera、Mozilla Firefox 浏览器打开） 打开，可以看到每一步都非常详细地记录过，并配有截图注释部分也有写出 最后面还有更详细的信息]]></content>
