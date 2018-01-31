@@ -16,7 +16,7 @@
   <entry>
     <title><![CDATA[Java 学习笔记 - 环境变量的配置]]></title>
     <url>%2F2018%2F01%2F31%2FJava-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[安装 JDK（注意：是 JDK，不是 JRE！！！） 访问 JDK 下载地址，选择Accept License Agreement后，找到适用于自己系统版本的 JDK 下载 安装过程这里省略，一直点下一步即可 配置环境变量右键计算机（或者叫做我的电脑、这台电脑），点击属性 点右边的高级系统设置（注：XP 请直接选择高级选项卡） 点击环境变量 在Path变量前加入1JDK 安装路径/bin; JDK 默认安装路径在C:\Program Files\Java\里注意要区分 JDK 和 JRE 的区别，JRE 只能运行程序，只有 JDK 才能编译.java文件bin 后面还有个分号！别漏输了 再一路按确定按回去 打开 cmd，输入java和javac命令进行测试，如果没有提示&#39;java&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。就成功了（如果你在编辑环境变量之前还打开过 cmd 窗口，先关掉重开一个再测试，不然不会生效）]]></content>
+    <content type="text"><![CDATA[如题，没什么好介绍的 安装 JDK（注意：是 JDK，不是 JRE！！！） 访问 JDK 下载地址，选择Accept License Agreement后，找到适用于自己系统版本的 JDK 下载 安装过程这里省略，一直点下一步即可 配置环境变量右键计算机（或者叫做我的电脑、这台电脑），点击属性 点右边的高级系统设置（注：XP 请直接选择高级选项卡） 点击环境变量 在Path变量前加入1JDK 安装路径/bin; JDK 默认安装路径在C:\Program Files\Java\里注意要区分 JDK 和 JRE 的区别，JRE 只能运行程序，只有 JDK 才能编译.java文件bin 后面还有个分号！别漏输了 再一路按确定按回去 打开 cmd，输入java和javac命令进行测试，如果没有提示&#39;java&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。就成功了（如果你在编辑环境变量之前还打开过 cmd 窗口，先关掉重开一个再测试，不然不会生效）]]></content>
       <categories>
         <category>Java-学习笔记</category>
       </categories>
