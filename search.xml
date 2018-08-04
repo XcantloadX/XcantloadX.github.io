@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo 常见问题收集（持续更新）]]></title>
-    <url>%2F2018%2F01%2F31%2FHexo-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[自己碰到的各种错误和解决方法，都收集在这里目前有点少，但会持续更新善用搜索功能（Ctrl + F） SSH Keys 与 项目错误（Please make sure you have the correct access rights and the repository exists.）完整输出：12345678910111213Warning: Permanently added &apos;git.coding.net,123.59.83.43&apos; (RSA) to the list of known hosts.git@git.coding.net: Permission denied (publickey).fatal: Could not read from remote repository.Please make sure you have the correct access rightsand the repository exists.FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.htmlError: Warning: Permanently added &apos;git.coding.net,123.59.83.43&apos; (RSA) to the list of known hosts.git@git.coding.net: Permission denied (publickey).fatal: Could not read from remote repository.Please make sure you have the correct access rightsand the repository exists. 问题在于没有在 Github 或者 Coding 上设置 SSH Keys，参照 利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二） 去配置也有可能是你设置的项目不存在，检查一下你的网站配置文件下deploy项有没有输错 YAML 语法错误（YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key）完整输出：123456789101112131415161718192021222324252627INFO Start processingERROR Process failed: _posts/Java-学习笔记-配置环境变量.mdYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 5, column 1: ^ at generateError (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:165:10) at throwError (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:171:9) at readBlockMapping (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:1046:9) at composeNode (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:1332:12) at readDocument (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:1492:3) at loadDocuments (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:1548:5) at Object.load (C:\Users\Administrator\Desktop\XcantloadX\node_modules\js-yaml\lib\js-yaml\loader.js:1569:19) at parseYAML (C:\Users\Administrator\Desktop\XcantloadX\node_modules\hexo-front-matter\lib\front_matter.js:80:21) at parse (C:\Users\Administrator\Desktop\XcantloadX\node_modules\hexo-front-matter\lib\front_matter.js:56:12) at C:\Users\Administrator\Desktop\XcantloadX\node_modules\hexo\lib\plugins\processor\post.js:52:18 at tryCatcher (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\util.js:16:23) at Promise._settlePromiseFromHandler (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:509:35) at Promise._settlePromise (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:569:18) at Promise._settlePromise0 (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:614:10) at Promise._settlePromises (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:693:18) at Promise._fulfill (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:638:18) at PromiseArray._resolve (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise_array.js:126:19) at PromiseArray._promiseFulfilled (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise_array.js:144:14) at PromiseArray._iterate (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise_array.js:114:31) at PromiseArray.init [as _init] (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise_array.js:78:10) at Promise._settlePromise (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:566:21) at Promise._settlePromise0 (C:\Users\Administrator\Desktop\XcantloadX\node_modules\bluebird\js\release\promise.js:614:10) 检查提示出错的文件，这里出错的是一篇文章，那就看一下title:、date:等后面有没有空一格参考 YAML 语言教程、YAML 语法、Hexo - Front-matter 和 Hexo - 配置 进行检查]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>问题</tag>
-        <tag>解决方法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java 学习笔记 - 环境变量的配置]]></title>
-    <url>%2F2018%2F01%2F31%2FJava-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[如题，没什么好介绍的 安装 JDK（注意：是 JDK，不是 JRE！！！） 访问 JDK 下载地址，选择Accept License Agreement后，找到适用于自己系统版本的 JDK 下载 安装过程这里省略，一直点下一步即可 配置环境变量右键计算机（或者叫做我的电脑、这台电脑），点击属性 点右边的高级系统设置（注：XP 请直接选择高级选项卡） 点击环境变量 在Path变量前加入1JDK 安装路径/bin; JDK 默认安装路径在C:\Program Files\Java\里注意要区分 JDK 和 JRE 的区别，JRE 只能运行程序，只有 JDK 才能编译.java文件bin 后面还有个分号！别漏输了 再一路按确定按回去 打开 cmd，输入java和javac命令进行测试，如果没有提示&#39;java&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。就成功了（如果你在编辑环境变量之前还打开过 cmd 窗口，先关掉重开一个再测试，不然不会生效）]]></content>
-      <categories>
-        <category>Java-学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[如何在不安装软件的情况下快速删除大量文件]]></title>
     <url>%2F2018%2F01%2F20%2F%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E5%BF%AB%E9%80%9F%E5%88%A0%E9%99%A4%E5%A4%A7%E9%87%8F%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[我们都知道，Windows 在删除文件夹时会先统计里面文件的数量，如果有很多文件，那就要等上半天这篇教程将会告诉你如何不安装额外的软件，也能快速删除大量文件 使用 cmd 命令在你要删除的文件夹的空白地方按住Shift并右击，选择在此处打开命令窗口 在打开的窗口里分别输入一下命令：12del /s /q /f 文件夹rd /s /q 文件夹 如果没有程序正在使用文件夹，文件夹就会被顺利删除 添加右键菜单新建一个 txt，粘贴一下内容1234567Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\Directory\shell\Del]@=&quot;快速删除大量文件（不可撤销！）&quot;[HKEY_CLASSES_ROOT\Directory\shell\Del\command]@=&quot;cmd /c del /s /q /f \&quot;%1\&quot; &amp;&amp; rd /s /q \&quot;%1\&quot; &amp;&amp; echo 删除完成，5 秒后自动关闭... &amp;&amp; ping 127.0.0.1 -n 5 &gt; nul&quot; 另存为.reg文件，打开，确认导入 对着一个文件夹右键试试，是不是有效果了？]]></content>
@@ -38,18 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[系统自带的做教程、求助的好工具]]></title>
-    <url>%2F2017%2F12%2F24%2F%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E7%9A%84%E5%81%9A%E6%95%99%E7%A8%8B%E3%80%81%E6%B1%82%E5%8A%A9%E7%9A%84%E5%A5%BD%E5%B7%A5%E5%85%B7%2F</url>
-    <content type="text"><![CDATA[别人问你一个电脑问题，截一大堆图，写一大堆字，不管怎么说还是说不清楚这时候就要轮到一个系统自带的，你可能连听都没听过的工具，叫做问题步骤记录器 运行程序按Win + R快捷键打开运行，输入PSR(不区分大小写)，回车 使用方法点击开始记录，系统就会自动记录你的每一步操作，并截一张图 在记录过程中，如果需要重点突出某个地方或进行解释，可以点击添加注释 选择一片区域，写好注释，确定即可 操作完毕之后，点击停止录制 文件介绍保存的是.zip文件，解压后，可以看见一个.mhtml后缀的文件（补充：.mhtml是一种聚合HTML文件，只能用 Internet Explorer 4.0及更高版本、Opera、Mozilla Firefox 浏览器打开） 打开，可以看到每一步都非常详细地记录过，并配有截图注释部分也有写出 最后面还有更详细的信息]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[如何访问虚拟机（另一台设备）上运行的 Web 项目]]></title>
     <url>%2F2017%2F12%2F16%2F%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%88%E5%8F%A6%E4%B8%80%E5%8F%B0%E8%AE%BE%E5%A4%87%EF%BC%89%E4%B8%8A%E8%BF%90%E8%A1%8C%E7%9A%84-Web-%E9%A1%B9%E7%9B%AE%2F</url>
     <content type="text"><![CDATA[怎样访问另外一台电脑或者虚拟机上运行的 Web 项目呢？（注意：此处用的是 VMware Workstation，其他虚拟机类似） 虚拟机（运行 Web 项目的设备）开启你的虚拟机，点击虚拟机 → 设置 切换到网络适配器，选择桥接模式，确定（注意：非虚拟机不需要做上面这两步） 在虚拟机（另一台电脑）中依次打开网络和共享中心 → 查看完整映射 将鼠标放在第一个图标上，记下MAC 地址 运行你的 Web 项目，注意记下端口 主机（访问 Web 项目的设备）在主机端打开路由器管理界面，查看有哪些设备连接到路由器，并将 MAC 地址与那些设备比较，把比中的设备的 IP 地址复制下来 在浏览器里访问 复制的 IP 地址 + 端口号，]]></content>
@@ -58,18 +21,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[利用 Hexo + Github Pages 搭建免费博客 - Markdown 语法说明（三）]]></title>
-    <url>%2F2017%2F12%2F06%2F%E5%88%A9%E7%94%A8-Hexo-Github-Pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2-Markdown-%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%89%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[上篇教程我们成功搭建了网站并上传到了云端，那么用什么写文章呢？用 Word ， HTML，还是什么？答案是——Markdown下面的图片是一段用 Markdown 书写的文字，你可以看到在文字之间有许多符号，下面我们就要来介绍一下这些符号是什么 （注意：本教程介绍的是 Github Markdown，其他编译器的语法、样式可能会有些不同）（温馨提示：内含视频，在装有 AdBlock 即广告拦截浏览器扩展的情况下，可能自动播放，请做好心理准备） Markdown 是什么 Markdown 的目标是实现「易读易写」。 可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。 总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像*强调*。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。 Markdown 的优点假如你要写一段文字的话，下面是用 Word、HTML 和 Markdown 的区别：（注意：下面均为 Word 2016 为标准） 标题： Word HTML Markdown 输入一段文字，点击标题1 &lt;h1&gt;标题&lt;/h1&gt; # 标题 粗体： Word HTML Markdown 输入一段文字，选中并点击粗体 &lt;strong&gt;文字&lt;/strong&gt; **文字** 图片： Word HTML Markdown 直接拖入 &lt;img src=&quot;链接&quot;&gt; ![描述](链接) 比较一下，看看哪个更简单一点？当然是 Markdown 了，除了图片和链接，其他的几乎都不需要动鼠标 Markdown 语法标题语法：123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题 预览： 粗体、斜体、删除线语法：12345**粗体**__粗体__*斜体*_斜体_~~删除线~~ 预览： 空格在 Markdown 源文件里按回车键换行，实际显示的文字并不会换行，而只是空了一格所以，我们在要换行的文字的末尾使用两个空格来强制换行但是有些编辑器可能不需要空两格也能自动换行，比如 Hexo 就不会 链接、图片语法：12345[链接文字](网址)![图片描述](图片地址)[百度](https://www.baidu.com)![百度 LOGO](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png) 图片描述只有在图片无法显示的情况下才会显示 预览： 列表语法：12345671. 有序列表12. 有序列表23. 有序列表3- 无序列表1- 无序列表2- 无序列表3 预览： 表格语法：123456789| 标题1 | 标题2 | 标题3 ||-------|------|-------|| 内容 | 内容 | 23333333333 || 内容 | 内容 | 0.2333 || 标题1 | 标题2 | 标题3 ||-------:|:------|:-------:|| 0000000000000000 | 0 | 23333333333 || 0 | 0000000000 | 0.2333 | 第二行连接号的左右还可以加:，表示文字是居中、向左还是向右对齐 预览： 待办事项（部分支持）语法：12- [x] 已完成事项- [ ] 未完成事项 预览： 代码、代码块语法（由于直接写会冲突，就放图片了）： “ ` ”叫做反单引号，在英文状态下按下数字1左边的键，就可以打出来代码块的第一个“```”后面可以加上代码的语言，以便显示高亮（语言列表可以在 github/linguist 找到，这个文件是针对Github Markdown的，其他编译器可能不适用） 预览： 其他Markdwon 不仅支持上面的这些功能，还支持大部分 HTML 代码，所以你甚至可以插入一段视频，例如：1&lt;iframe height=498 width=510 src='http://player.youku.com/embed/XMjQ4NDgxNDUzMg==' frameborder=0 'allowfullscreen'&gt;&lt;/iframe&gt; 预览： 如果你要在文字里输入几个普通的“`”、“**”像这样的符号，编译器可能会把它们当做上面的语法处理，变成了关键字可以在符号的前面加上“\”（右斜杠）来把它转为普通字符]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -97,29 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo 0 基础全套教程]]></title>
-    <url>%2F2017%2F11%2F10%2FHexo-%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[所有的关于 Hexo 的教程（包括正在编写的）都在这里建议收藏以后再看，更新较慢（注意：纯文字无法跳转的代表正在编写） 基础 利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一） 利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二） 利用 Hexo + Github Pages 搭建免费博客 - 命令说明（三） 利用 Hexo + Github Pages 搭建免费博客 - Markdown 语法说明（四） 利用 Hexo + Github Pages 搭建免费博客 - 更换主题与安装插件（五） 利用 Hexo + Github Pages 搭建免费博客 - 第三方服务（六） 高级 给你的博客做个自定义404页面 在手机上运行 Hexo（一） 在手机上运行 Hexo（二） 在线 IDE 运行 Hexo - Coding 与 Codeanywhere 免费域名 .tk 其他 Hexo s 提示 Local hexo not found in XXX 的解决方法]]></content>
-      <categories>
-        <category>专题</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[利用 Hexo + Github Pages 搭建免费博客 - 上传云端（二）]]></title>
-    <url>%2F2017%2F11%2F10%2F%E5%88%A9%E7%94%A8-Hexo-Github-Pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2-%E4%B8%8A%E4%BC%A0%E4%BA%91%E7%AB%AF%EF%BC%88%E4%BA%8C%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[在上一篇教程，我们已经成功把网站运行起来了。那么，怎样才能把网站上传到云端？（建议：最好两个都注册，后面我会说明为什么） Github 教程注册账号打开 Github 官网 ，在主页就有注册的地方依次输入用户名，邮箱，密码，点击Sign up for Github 选择免费方案，点击Continue 除非你以后想当程序员，否则就直接点skip this step 打开你的邮箱，点击Verify email address验证邮箱 创建仓库Q:什么是仓库A:简单来说，就是一个用来储存代码的网盘，不过比网盘要高级 进入 Github 首页 ，点击右边的New repositoriy Repository name一栏填你的用户名.github.io，否则后面就无法上传点击Create repository（由于我已经创建过同名的，所以按钮是灰色的） 配置 SSH Key打开 Git，输入12git config --global user.email &quot;注册时的邮箱&quot; git config --global user.name &quot;注册时的用户名&quot; 输入下面的命令生成 Key1ssh-keygen -t rsa -C &quot;注册时的邮箱&quot; Git 会提示你输入一个目录来存放 Key 文件，直接回车表示括号里的路径 输入一个密码，也可以不设密码，直接回车 再输一遍密码，之前没有就回车 进入存放 Key 文件的目录，打开id_rsa.pub文件（用文本编辑器，也可以用记事本），复制里面的内容 进入 Github 的 SSH Keys 设置页面，点击New SSH key Title里随便输一个标题，Key里粘贴你刚刚复制的 Key，然后点击Add SSH Key 然后它会让你输入密码，输入后直接回车 配置本地 Git进入你的仓库，点击SSH按钮，复制 打开站点配置文件，找到Deployment一栏，按照下面修改1234deploy: type: git repo: git@github.com:用户名/刚刚复制的地址 branch: master 例如，我的是：1234deploy: type: git repo: git@github.com:XcantloadX/xcantloadx.top.git branch: master 在博客根目录打开 Git，输入命令1hexo deploy //可简写为 hexo d 如果出现ERROR Deployer not found: git，运行1npm install hexo-deployer-git --save 第一次上传会出现提示，输入yes回车即可 如果没有出现像下面一样的提示，就说明上传成功，你可以去你的用户名.github.io看看效果1234567Please make sure you have the correct access rights and the repository exists. at ChildProcess.&lt;anonymous&gt; (C:\Users\Administrator\Desktop\1\Desktop\XcantloadX - 副本\node_modules\hexo-util\lib\spawn.js:37:17) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at ChildProcess.cp.emit (C:\Users\Administrator\Desktop\1\Desktop\XcantloadX - 副本\node_modules\cross-spawn\lib\enoent.js:40:29) at maybeClose (internal/child_process.js:925:16) at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5) Coding访问 Coding 官网，由于 Coding 是中文的，注册账号的过程我就不截图了 注册好后，访问 https://coding.net/user，点击右上角的`+`，选择项目 项目名称、公不公开随意，填写完后点击创建项目 按照图中顺序添加 Key （仍然是上次生成的） 输入密码并确认 打开你新建的项目，复制 SSH 地址 打开站点配置文件，找到Deployment一栏，按照下面修改123456deploy: type: git repo: github: git@github.com:XcantloadX/xcantloadx.top.git coding: 刚刚复制的地址 branch: master hexo d即可，若无错误提示，表明配置成功，可以去https://用户名.coding.me/项目名查看效果]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo 阅读量 api.leancloud.cn 解析失败]]></title>
     <url>%2F2017%2F10%2F21%2FHexo-%E9%98%85%E8%AF%BB%E9%87%8F-api-leancloud-cn-%E8%A7%A3%E6%9E%90%E5%A4%B1%E8%B4%A5%2F</url>
     <content type="text"><![CDATA[近期，国家有关部门和运营商对网络基础设施进行了更严格的管制，其中包含一些针对 DNS 系统的调整。LeanCloud 国内节点 API 的老版域名 api.leancloud.cn 意外地受到了波及，因此在国外一些地区和国内少数地区会出现一定概率的解析错误（DNS 污染），在访问这个域名时可能会出现间歇性的失败。 这会导致博客的阅读量无法正常显示 HOSTS 文件法 因此在国外一些地区和国内少数地区会出现一定概率的解析错误（DNS 污染） 既然是 DNS 污染，我们就从 HOSTS 文件入手 打开DNS 查询工具，输入通知里提到的api.leancloud.cn，点击检测 会出现很多 IP ，选一个 TTL 值最小的 IP ，复制出来 打开C:\Windows\System32\drivers\etc（这是 Win 7 的，其他系统自行搜索），找到HOSTS文件，右键用记事本打开 输入1IP 地址 api.leancloud.cn 保存退出 网址法HOSTS 文件法只有你自己看得见阅读数，别人看不见，除非别人也改了 HOSTS 文件，那就要从根源文件入手了 打开 LeanCloud ，进入设置 → 应用 Key，复制 App ID 打开https://app-router.leancloud.cn/2/route?appId= &lt;替换为 appId&gt;，复制api_server后面的地址 下载 av-core-mini-0.6.4.js，打开，搜索https，将https://api.leancloud.cn替换为刚刚复制的地址 把改过的av-core-mini-0.6.4.js文件复制到你的网站\source文件夹下 复制直链，打开你的网站\themes\next\layout\_third-party\analytics\lean-analytics.swig，把https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js替换为/av-core-mini-0.6.4.js 打开网站配置文件，找到Directory，在skip_render:下面加一行（注意空格！）1- &apos;av-core-mini-0.6.4.js&apos; 再访问看看，可以了]]></content>
@@ -132,18 +60,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[利用 Hexo + Github Pages 搭建免费博客 - 第一次运行（一）]]></title>
-    <url>%2F2017%2F10%2F20%2F%E5%88%A9%E7%94%A8-Hexo-Github-Pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%BF%90%E8%A1%8C%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[Hexo 是一个免费静态博客开源程序。Hexo 基于 Node.js 技术开发，为高效率静态博客程序。与 Wordpress 相比属于一款轻量级的博客系统，Hexo 生成的静态网站可以放在任意空间，使用 Markdown 语法，支持评论、分类、标签、图片等。 教程涉及到很多命令，你可以在Hexo 官方文档里找到，当然，你也可以不弄懂它 配置环境Node.js去 Node.js 官网 下载对应你的系统的版本64 位直接点第一个绿色按钮32 位点下面的Other Downloads，进去找到第一个32-bit的按钮 安装都是傻瓜式的一直点Next Git由于众所周知的原因，从官网下载速度非常慢，所以我把最新的的版本（2.14.2.3）传到了百度云，点击传送安装过程也是傻瓜式一直按Next 安装 Hexo在任意位置右键，点击Git Bash Here如果你不习惯 Git 的命令行，你也可以用 Cmd ，都是一样的效果（小技巧：按住Shift键并右键，选择在此处打开命令窗口，可以直接在此路径下打开 cmd） 执行1npm install -g hexo-cli 安装比较慢，没反应是正常现象，如果很久都没反应，按Ctrl + C强行停止，再输入命令尝试 出现$符号就可以继续操作了 配置博客第一次运行在任意位置右键，选择Git Bash Here，执行1hexo init 文件夹名 文件夹名字随意 复制文件中，时间较长，喝杯咖啡耐心等待… 出现INFO Start blogging with Hexo!就安装完成了 依次执行（//后面的是注释，不需要执行）：12cd 文件夹名hexo start //可简写为 hexo s （小技巧：如果文件夹名较长，可以输入cd 名字的前一部分 + *，如果是英文，注意区分大小写！） 出现INFO Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.时，你的博客就在本地开始运行了，注意只是本地，也就是只有你能看到，等会我们再上传到云端 访问 http://localhost:4000/，看见没？你的博客已经运行起来了！]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo s 提示 Local hexo not found in XXX 的解决方法]]></title>
     <url>%2F2017%2F10%2F20%2FHexo-s-%E6%8F%90%E7%A4%BA-Local-hexo-not-found-in-XXX-%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[需要转移 Hexo 文件到另外一台电脑，把 Hexo 文件夹里的所有文件复制到另一台电脑上，配置好 Hexo，最后hexo s时却提示12ERROR Local hexo not found in G:\XcantloadXERROR Try running: &apos;npm install hexo --save&apos; 的解决方法 解决方法查找资料后，得知是因为node_modules文件夹的原因，需要删除重新安装 1.删除node_modules文件夹 2.执行1npm install 如果执行后只有光标一直在闪，没有任何反应，输入1npm install cnpm -g --registry=https://registry.npm.taobao.org 来安装国内的淘宝 NPM 镜像 安装时间比较久，可能会没反应，多等一会 安装完之后，输入cnpm install，时间也比较久 3.再hexo s就不会报错了]]></content>
@@ -153,18 +69,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[一款小巧的清理软件——Dir]]></title>
-    <url>%2F2017%2F10%2F13%2F%E4%B8%80%E6%AC%BE%E5%B0%8F%E5%B7%A7%E7%9A%84%E6%B8%85%E7%90%86%E8%BD%AF%E4%BB%B6%E2%80%94%E2%80%94Dir%2F</url>
-    <content type="text"><![CDATA[一款小巧的清理软件——Dir这是一款小巧的垃圾清理软件，和那些臃肿的XX卫士，XX清理大师相比，我觉得更有清理软件的样子，更加轻巧方便。 下载酷安手机乐园(暂时好像挂了，以后补链接)Google Play 第一次设置在清理之前，我们要先更新规则打开侧边栏 点击设置 选择规则 点击管理规则 点击同步，Dir就会和服务器开始同步规则 开始清理同步完成后回到主界面，点击右下角的按钮，开始扫描 扫描完成，可以看到每一项都有两个选项第一个是替换，可以防止垃圾文件再次生成第二个是删除 按右下角的删除按钮，弹出一个提示，是，就会开始清理 可以看到，我已经累计清理了6GB的垃圾]]></content>
-      <categories>
-        <category>好软推荐</category>
-      </categories>
-      <tags>
-        <tag>清理</tag>
-        <tag>软件</tag>
       </tags>
   </entry>
   <entry>
